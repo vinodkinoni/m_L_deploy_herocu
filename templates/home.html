@@ -1,0 +1,31 @@
+<h1>Heart Disease Prediction</h1>
+<h2>     </h2>
+
+<form method="POST">
+    <div id="wrapper">
+        <div id="inner1">Age (between 29 and 77): <input type="number" name="age" min="29" max="77" required></div>
+        <div id="inner2">Sex (Either 0 or 1): <input type="number" name="sex" min="0" max="1" required></div>
+        <div id="inner1">cp (between 0 and 3): <input type="number" name="cp" min="0" max="3" required></div>
+        <div id="inner1">trestbps (between 94 and 200): <input type="number" name="trestbps" min="94" max="200" required></div>
+        <div id="inner1">chol (between 126 and 564): <input type="number" name="chol" min="126" max="564" required></div>
+        <div id="inner1">fbs (Either 0 or 1): <input type="number" name="fbs" min="0" max="1" required ></div>
+        <div id="inner1">restecg (between 0 and 2): <input type="number" name="restecg" min="0" max="2" required ></div>
+        <div id="inner1">thalach (between 71 and 202): <input type="number" name="thalach" min="71" max="202" required ></div>
+        <div id="inner1">exang (Either 0 or 1): <input type="number" name="exang" min="0" max="1" required ></div>
+        <div id="inner1">oldpeak (between 0 and 6.2): <input type="number"  step="0.1" name="oldpeak" min="0" max="6.2" required ></div>
+        <div id="inner1">slope (between 0 and 2): <input type="number" name="slope" min="0" max="2" required ></div>
+        <div id="inner1">CA (between 0 and 4): <input type="number" name="cainput" min="0" max="4" required ></div>
+        <div id="inner1">thal (between 0 and 3): <input type="number" name="thal" min="0" max="3" required ></div>
+
+    </div>
+
+    <input type="submit">
+</form>
+
+<form method="GET">
+    <p>Target Category is {{ target}}</p>
+</form>
+
+
+
+
