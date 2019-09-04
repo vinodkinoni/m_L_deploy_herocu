@@ -33,17 +33,22 @@ div {
   background-color: #f2f2f2;
   padding: 20px;
 }
+
+h1{font-size:50px;
+     height:200px;}
+
+button {
+    color: blue;
+}
 </style>
 
 
-<body background="static/images/sunsetimage.jpg">
-
-<center><h1><font color="white">Heart Disease Prediction</h1></center>
-<h2>     </h2>
-
+<body background="static/images/heart_too.jpg">
+<h2>'     </h2>
+<h2>'    </h2>
 <div align="center" style="margin-right: 20%;
     margin-left: 20%;">
-
+  <center><h><font color="black" >Heart Disease Prediction</h></center>
   <form method="POST">
   <form action="/action_page.php">
     <label for="age"></label>
@@ -86,12 +91,14 @@ div {
     <label for="thal"></label>
     <input type="number" id="thal" name="thal" placeholder="thal (between 0 and 3)" min="0" max="3" required>
 
-    <input type="submit" value="Predict">
+
+    <input type="submit" style="font-size: larger; color: red; background-color: blue; font-weight: 700 " value=" Predict Disease ">
   </form>
 </form>
 
 <form method="GET">
-    <center><h2><font color="Black"> Target Category is {{ target}}</h2></center>
+    <center><h2><font color="Black"> The Predicted Disease Category is {{ target}}</h2></center>
+    <center><h2><font color="Black"> {{ text_out}}</h2></center>
 </form>
 
 

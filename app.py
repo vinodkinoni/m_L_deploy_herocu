@@ -41,7 +41,11 @@ def my_form_post():
 
     target = get_predictions(age, sex, cp, trestbps, chol, fbs, restecg, thalach, exang, oldpeak, slope,cainput, thal)
     #return str(target)
-    return render_template('home.html', target = target)
+    if target == 1:
+        text_out ="Person is likely to get Heart Disease"
+    else:
+        text_out = "Person is unlikely to get Heart Disease"
+    return render_template('home.html', target = target, text_out =text_out)
 
 
 if __name__ == "__main__":
